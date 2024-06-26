@@ -60,8 +60,7 @@ export class OutputComponent implements OnInit {
         (element as HTMLElement).style.backgroundColor = 'red';
         (element as HTMLElement).classList.add('class', 'green');
       });
-    },10000);
-
+    }, 10000);
   }
 }
 // let i = 0;
