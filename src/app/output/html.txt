@@ -1,0 +1,45 @@
+<app-input></app-input>
+
+<div class="field padding-bottom--24">
+  <p>You Selected FDirection : {{ Direction }}</p>
+  <p>You Selected FDuration: {{ Duration }}</p>
+</div>
+
+<div class="Parent">
+  <div class="">
+    <body id="one currunt">
+      <div class="traffic-signal">
+        <div class="color-box light red animate"></div>
+        <div class="color-box light yellow"></div>
+        <div class="color-box light green"></div>
+      </div>
+    </body>
+  </div>
+  <div class="Next middle">
+    <body id="two">
+      <div class="first currunt">
+        <div class="traffic-signal">
+          <div class="color-box light red animate"></div>
+          <div class="color-box light yellow"></div>
+          <div class="color-box light green"></div>
+        </div>
+      </div>
+      <div class="second currunt">
+        <div class="traffic-signal">
+          <div class="color-box light red animate"></div>
+          <div class="color-box light yellow"></div>
+          <div class="color-box light green"></div>
+        </div>
+      </div>
+    </body>
+  </div>
+  <div class="Next">
+    <body id="three currunt">
+      <div class="traffic-signal">
+        <div class="color-box light red animate"></div>
+        <div class="color-box light yellow"></div>
+        <div class="color-box light green"></div>
+      </div>
+    </body>
+  </div>
+</div>

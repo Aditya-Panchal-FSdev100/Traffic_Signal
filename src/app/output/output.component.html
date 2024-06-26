@@ -1,0 +1,34 @@
+<app-input></app-input>
+<!-- <div class="main">
+  <div id="one" style="border: 2px solid rgb(230, 74, 2)">ddfe</div>
+  <div id="two" style="border: 2px solid black">ddfe</div>
+  <div id="three" style="border: 2px solid black">ddfe</div>
+  <div id="four" style="border: 2px solid black">ddfe</div>
+</div> -->
+<div class="container">
+  <div class="top-left"></div>
+  <div class="top-right"></div>
+  <div class="bottom-left"></div>
+  <div class="bottom-right"></div>
+</div>
+<div class="containers" *ngFor="let color of colors; let i = index">
+  <div [style.background-color]="colors[i]" [ngClass]="{ green: i == j }">
+    Box {{ i + 1 }}
+  </div>
+</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Change bg color every 1 seconds</title>
+  </head>
+  <body>
+    <h1>Background Color is being changed every 1 seconds</h1>
+    <script>
+      setInterval(function () {
+        var randomColor = Math.floor(Math.random() * 16777215).toString(16);
+        document.body.style.backgroundColor = "#" + randomColor;
+        console.log(randomColor);
+      }, 1000);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+
+
+<form [formGroup]="signalInput" (ngSubmit)="Onsubmit(signalInput)">
+  <div class="dropdown">
+    <div>
+      <label>Choose Your Signal Duration</label>
+      <select formControlName="FDuration" (change)="ChangeDuration($event)">
+        <option *ngFor="let seconds of Duration" [value]="seconds">
+          {{ seconds }}
+        </option>
+      </select>
+
+      <label>Choose Direction For Signal</label>
+      <select formControlName="FDirection" (change)="ChangeDirection($event)">
+        <option *ngFor="let dir of Direction" [value]="dir.key" >
+          {{ dir.value }}
+        </option>
+      </select>
+    </div>
+  </div>
+  <button (click)="ShowTrafficSignal()">See Traffic Signal</button>
+</form>
+

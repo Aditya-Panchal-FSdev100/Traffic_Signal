@@ -1,0 +1,23 @@
+ this.intervalId = setInterval(() => {
+      this.colors = this.colors.map((color, index) => {
+        return index % 4 === 0 ? this.colors[(index + 1) % 4] : color;
+      });
+    }, 1000);
+    // this.showBorder = true;
+    // const o = Array.from(document.querySelectorAll('.one'));
+    // setInterval(() => {
+    //   debugger;
+    // document.getElementById('one')!.style.backgroundColor = 'Green';
+    //   divElements.forEach((div) => {id
+    //     div.setAttribute('class', 'showborder'); // = 'red'  Set the background color to red
+    //     // div.style.backgroundColor = 'yellow'; // Set the text color to white
+    //   });
+    // }, 3000); // Apply styles after 2 seconds
+    // const boxes = Array.from(
+    //   document.querySelectorAll<HTMLElement>('.currunt')
+    // );
+    // setInterval(() => {
+    //   boxes.forEach((block) => {
+    //     block.style.border = 'yellow';
+    //   });
+    // }, 1000); // adjust the interval time as needed
